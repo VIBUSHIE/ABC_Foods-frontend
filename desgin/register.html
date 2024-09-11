@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <script src= "js/jquery-3.7.1.js"></script>
+   <script src="js/script.js"></script>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="index.html" class="logo">ABC Foods</div></a>
+
+
+      <div class="profile">
+         <p class="name">shaikh anas</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">profile</a>
+            <a href="#" class="delete-btn">logout</a>
+         </div>
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="form-container">
+
+   <form >
+      <h3>register now</h3>
+      <input type="number" min="0" max="9999999999" id="idreg" placeholder="ID" required class="box" name="number" disabled>
+      <input type="text" required maxlength="20" id="namereg" placeholder="Name" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="email" required maxlength="50" id="emailreg" placeholder="Email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="number" min="0" max="9999999999" id="mobilereg" placeholder="Mobile" required class="box" name="number">
+      <input type="password" required maxlength="20" id="passwordreg" name="pass" placeholder="Password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" required maxlength="20" name="cpass" placeholder="confirm your password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+
+      <input type="button" value="register" class="btn" name="submit" onclick="saveUser()">
+      <p>already have an account? <a href="login.html">login</a></p>
+   </form>
+
+</section>
+
+</body>
+</html>

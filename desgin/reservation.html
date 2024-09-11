@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reservation</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src= "js/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="index.html" class="logo">ABC Foods</div></a>
+      
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="about.html">about</a>
+     </nav>
+
+     <div class="icons">
+        <a href="search.html"><i class="fas fa-search"></i></a>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+     </div>
+
+      <div class="profile">
+         <p class="name">shaikh anas</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">profile</a>
+            <a href="#" class="delete-btn">logout</a>
+         </div>
+         <p class="account"><a href="login.html">login</a> or <a href="reservation.html">Reservation</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="reservation">
+    <div class="container">
+
+      <div class="form reservation-form bg-black-10">
+
+        <form>
+
+          <h2 class="headline-1 text-center">Online Reservation</h2>
+            <br>
+
+          <div class="input-wrapper">
+            <input type="text" id="rname" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+            <input type="tel" id="rphone" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+          </div>
+            <br>
+
+          <div class="input-wrapper">
+
+            <div class="icon-wrapper">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <select id="rpcount" name="person Count" class="input-field">
+                <option value="1">1-person</option>
+                <option value="2">2-persons</option>
+                <option value="3">3-persons</option>
+                <option value="4">4-persons</option>
+                <option value="5">5-persons</option>
+                <option value="6">6-persons</option>
+                <option value="7">7-persons</option>
+              </select>
+
+              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+            </div>
+              <br>
+
+            <div class="icon-wrapper">
+              <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+              <input id="rdate" type="date" name="reservation-date" class="input-field">
+
+              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+            </div>
+              <br>
+
+            <div class="icon-wrapper">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <select id="rtime" name="person" class="input-field">
+                <option value="08:00am">08 : 00 am</option>
+                <option value="09:00am">09 : 00 am</option>
+                <option value="010:00am">10 : 00 am</option>
+                <option value="011:00am">11 : 00 am</option>
+                <option value="012:00am">12 : 00 am</option>
+                <option value="01:00pm">01 : 00 pm</option>
+                <option value="02:00pm">02 : 00 pm</option>
+                <option value="03:00pm">03 : 00 pm</option>
+                <option value="04:00pm">04 : 00 pm</option>
+                <option value="05:00pm">05 : 00 pm</option>
+                <option value="06:00pm">06 : 00 pm</option>
+                <option value="07:00pm">07 : 00 pm</option>
+                <option value="08:00pm">08 : 00 pm</option>
+                <option value="09:00pm">09 : 00 pm</option>
+                <option value="10:00pm">10 : 00 pm</option>
+              </select>
+
+              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+            </div>
+              <br>
+
+          </div>
+
+          <textarea id="rmsg" name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+            <div class="center-button">
+                <button type="button" class="btn btn-secondary" onclick="AddReservation()">
+                    <span class="text text-1">Book a Table</span>
+                </button>
+            </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+<footer class="footer">
+
+ 
+    <div class="credit">&copy; copyright @ 2024 by <span>ABC Resturant</span> | all rights reserved!</div>
+ 
+ </footer>
+
+ 
+ <script src="js/script.js"></script>
+ 
+ </body>
+ </html>

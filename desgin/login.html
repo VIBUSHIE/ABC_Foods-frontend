@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <script src= "js/jquery-3.7.1.js"></script>
+   <script src="js/script.js"></script>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="index.html" class="logo">ABC Foods</a>
+
+      <div class="profile">
+         <p class="name">Vibushie</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">profile</a>
+            <a href="#" class="delete-btn">logout</a>
+         </div>
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="form-container">
+
+   <form>
+      <h3>login</h3>
+      <input type="email" required maxlength="50" id="loginemail" name="email" placeholder="Email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" required maxlength="20" id="loginpass" name="pass" placeholder="Password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="button" value="login" class="btn" name="submit" onclick="userLogin()">
+      <p>don't have an account? <a href="register.html">register</a></p>
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- <footer class="footer">
+
+   <div class="credit">&copy; copyright @ 2024 by <span>ABC Resturant</span> | all rights reserved!</div>
+
+</footer> -->
+
+
+</body>
+</html>
